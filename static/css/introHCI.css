@@ -1,3 +1,30 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(/fonts/PT_Sans/PT_Sans-Web-Italic.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(/fonts/PT_Sans/PT_Sans-Web-Regular.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(/fonts/PT_Sans/PT_Sans-Web-Bold.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(/fonts/PT_Sans/PT_Sans-Web-BoldItalic.ttf) format('ttf');
+}
+
+
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {
 	margin-top: 2em;
@@ -14,6 +41,7 @@
 body {
      border: 1px dotted gray;
      padding: 20px;
+     font-family: 'PT Sans', sans-serif;
 }
 
 .jumbotron {
@@ -31,4 +59,9 @@ body {
      right: 0;
      position: absolute;
      z-index: -1;	
+}
+
+.project {
+     padding: 20px;
+     font-variant: small-caps;
 }
